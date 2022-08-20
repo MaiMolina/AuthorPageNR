@@ -649,28 +649,6 @@ img:hover {
 	grid-row-end: 9;
 }
 
-.gallery__item--7 {
-	grid-column-start: 1;
-	grid-column-end: 5;
-	grid-row-start: 6;
-	grid-row-end: 9;
-
-	/** Alternative Syntax **/
-	/* grid-column: 1 / span 4; */
-	/* grid-row: 6 / span 3; */
-}
-
-.gallery__item--8 {
-	grid-column-start: 5;
-	grid-column-end: 9;
-	grid-row-start: 6;
-	grid-row-end: 9;
-
-	/** Alternative Syntax **/
-	/* grid-column: 5 / span 4; */
-	/* grid-row: 6 / span 3; */
-}
-
 /* Gallery Section */
 
 /*  Inn BoonsBoro Page */
