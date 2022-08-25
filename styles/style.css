@@ -1,8 +1,8 @@
 *,
 *:before,
 *:after {
-	margin: 0;
-	padding: 0;
+	margin: 0px;
+	padding: 0px;
 	font-family: Arial, Helvetica, sans-serif;
 	box-sizing: border-box;
 	-moz-box-sizing: border-box;
@@ -15,6 +15,18 @@ body {
 	height: 250px;
 }
 
+.grid-container {
+	height: 100vh;
+	display: grid;
+	grid-template-columns: repeat(2, 50%);
+	grid-template-rows: 1fr 10fr 1fr;
+	grid-template-areas:
+	". header"
+	"nav nav"
+	"content content"
+	".footer footer";
+}
+
 .header {
 	background-color: #314CB6;
 	padding: 40px;
@@ -23,6 +35,12 @@ body {
 	color: #000000;
 	font-size: 25px;
 	text-align: center;
+}
+
+.header h1 {
+	font-size: 60px;
+	font-style: bold;
+	font: arial, sans-serif;
 }
 
 .header a {
@@ -50,7 +68,7 @@ nav a {
 	text-decoration: none;
 	text-transform: uppercase;
 	text-align: center;
-	color: white;
+	color: rgb(0, 0, 0);
 	cursor: pointer;
 }
 
@@ -61,6 +79,7 @@ nav .animation {
 	z-index: 0;
 	transition: all .5s ease 0s;
 	border-radius: 8px;
+	color: #000000;
 }
 
 a:nth-child(1) {
@@ -104,7 +123,7 @@ nav .start-blog, a:nth-child(3):hover~.animation {
 nav .start-portefolio, a:nth-child(4):hover~.animation {
 	width: 160px;
 	left: 310px;
-	background-color: #aa47d0;
+	background-color: #fbff00;
 }
 
 nav .start-contact, a:nth-child(5):hover~.animation {
@@ -260,69 +279,38 @@ nav .start-contact, a:nth-child(5):hover~.animation {
 
 .headlineInn h2 {
 	background-color: #e5d4fe;
+	font-size: 25px;
 }
 
-.headlineInn a {
+.gallery-p {
+	text-align: center;
+}
+
+.gallery-p p {
+	justify-content: center;
+}
+
+.button_gallery {
+	color: inherit;
+	text-align: center;
+}
+
+.button_gallery a {
 	text-decoration: none;
 	color: inherit;
+	text-align: center;
+	text-decoration: underline;
 }
 
 .gallery {
-	display: grid;
-	grid-template-columns: repeat(8, 1fr);
-	grid-template-rows: repeat(8, 5vw);
-	grid-gap: 1.5rem;
-}
-
-.gallery__img {
+	padding: 0;
+	display: inline-block;
 	width: 100%;
-	height: 100%;
-	object-fit: cover;
-	display: block;
+	height: 100px;
 }
 
-.gallery__item--1 {
-	grid-column-start: 1;
-	grid-column-end: 3;
-	grid-row-start: 1;
-	grid-row-end: 4;
-
-	/** Alternative Syntax **/
-	/* grid-column: 1 / span 2;  */
-	/* grid-row: 1 / span 2; */
-}
-
-.gallery__item--2 {
-	grid-column-start: 3;
-	grid-column-end: 6;
-	grid-row-start: 1;
-	grid-row-end: 5;
-
-	/** Alternative Syntax **/
-	/* grid-column: 3 / span 2;  */
-	/* grid-row: 1 / span 2; */
-}
-
-.gallery__item--3 {
-	grid-column-start: 6;
-	grid-column-end: 9;
-	grid-row-start: 1;
-	grid-row-end: 7;
-
-	/** Alternative Syntax **/
-	/* grid-column: 5 / span 4;
-	grid-row: 1 / span 5; */
-}
-
-.gallery__item--4 {
-	grid-column-start: 1;
-	grid-column-end: 6;
-	grid-row-start: 5;
-	grid-row-end: 9;
-
-	/** Alternative Syntax **/
-	/* grid-column: 1 / span 4;  */
-	/* grid-row: 3 / span 3; */
+.gallery img {
+	height: 635px;
 }
 
 /* Gallery Section */
@@ -337,6 +325,7 @@ nav .start-contact, a:nth-child(5):hover~.animation {
 
 .News h2 {
 	background-color: #e2fbfa;
+	font-size: 25px;
 }
 
 .News .video_content {
@@ -588,66 +577,26 @@ nav .start-contact, a:nth-child(5):hover~.animation {
 
 .container_Inn {
 	width: 100%;
-	margin: 2rem auto; 
+	margin: 2rem auto;
 }
 
-.gallery-Inn {
-	display: grid;
-	grid-template-columns: repeat(8, 1fr);
-	grid-template-rows: repeat(8, 7vw);
-	grid-gap: 1rem; 
+.innRow{
+    display: flex;
+    padding: 5px;
+    flex-wrap: wrap;
+	margin: 50px;
 }
 
-.gallery--img {
+.innColumn{
+	display: block;
+    flex: 40%;
+    padding: 5px;
+}
+
+.innColumn img{
+    margin-top: 5px;
 	width: 100%;
-	height: 100%;
-	object-fit: cover;
-	display: block; 
-    transition:all .5s ease-in-out;
-}
-
-.gallery--item__1 {
-	grid-column-start: 1;
-    grid-column-end: 3;
-    grid-row-start: 1;
-    grid-row-end: 3;
-}
-
-.gallery--item:hover {filter: opacity(.5);}
-
-.gallery--item__2 {
-    grid-column-start: 3;
-    grid-column-end: 6;
-    grid-row-start: 1;
-    grid-row-end: 3;
-}
-
-.gallery--item__3 {
-    grid-column-start: 6;
-    grid-column-end: 9;
-    grid-row-start: 1;
-    grid-row-end: 6;
-}
-
-.gallery--item__4 {
-    grid-column-start: 1;
-    grid-column-end: 6;
-    grid-row-start: 3;
-    grid-row-end: 6;
-}
-
-.gallery--item__5 {
-    grid-column-start: 1;
-    grid-column-end: 5;
-    grid-row-start: 6;
-    grid-row-end: 9;
-}
-
-.gallery--item__6 {
-	grid-column-start: 5;
-	grid-column-end: 9;
-	grid-row-start: 6;
-	grid-row-end: 9;
+	
 }
 
 /* Gallery Section */
@@ -702,7 +651,7 @@ textarea {
 	resize: vertical;
 }
 
-.bottom input[type=submit] {
+.bottom [type=submit] {
 	background-color: #04AA6D;
 	color: white;
 	padding: 12px 20px;
@@ -712,17 +661,21 @@ textarea {
 	float: left;
 }
 
-input[type=submit]:hover {
+.bottom  [type=submit]:hover {
 	background-color: #5745a0;
 }
 
-input[type=reset] {
+.bottom [type=reset] {
 	background-color: #f72d5c;
 	color: white;
 	padding: 12px 20px;
 	border: none;
 	border-radius: 4px;
 	cursor: pointer;
+}
+
+.bottom [type=reset]:hover {
+	background-color: #ec08e8;
 }
 
 .list {
@@ -739,7 +692,7 @@ footer {
 	margin: 0;
 	background-color: rgb(5, 5, 5);
 	font-size: 14px;
-	bottom: 0;
+	bottom: 0px;
 }
 
 footer .links {
@@ -858,3 +811,41 @@ footer .copyright p{
 	font-size: 13px;
 	color: #606060;
 }
+
+@media screen and (max-width: 920px) {
+	.grid-container {
+	  grid-template-areas:
+	  ".header header header header"
+	  "nav nav nav nav"
+	  "content content content content"
+	  ".footer footer footer footer";
+	}
+  }
+  
+  @media screen and (max-width: 520px) {
+	.grid-container {
+	  height: 100vh;
+	  display: grid;
+	  grid-template-columns: 100%;
+	  grid-template-rows: 1fr 5fr 5fr 1fr;
+	  grid-template-areas:
+	  ".header header header header"
+	  "nav nav nav nav"
+	  "content content content content"
+	  ".footer footer footer footer";
+	}
+  }
+  
+/*  Inn BoonsBoro Page */
+  @media (max-width: 800px){
+    .innColumn{
+        flex: 50%;
+    }
+}
+
+@media (max-width: 600px){
+    .innColumn{
+        flex: 100%;
+    }
+}
+/*  Inn BoonsBoro Page */
