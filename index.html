@@ -11,7 +11,6 @@
 </head>
 
 <body>
-  <div class="grid-cotainer">
     <header class="header">
       <a href="/index.html">
         <h1>NORA ROBERTS</h1>
@@ -27,7 +26,7 @@
     </nav>
     <br>
     <section>
-      <section class="sidebar-wrapper">
+      <section class="about-section">
         <!-- Vamos a agregar contenedores al texto y a la imagen -->
         <div class="contenedor-img">
           <img class="img-about-me" src="./assets/img/Nora-Roberts-index.jpg">
@@ -41,12 +40,10 @@
             of Fame and knows how to combine love with intrigue and mystery to perfection in her books. She currently
             resides with her husband in Maryland.
           </p>
-
           <p>
             Pseudonyms: Her real name is Eleanor Wilder. Her pseudonyms are Nora Roberts, Jill March, Sarah Hardesty and
             J.D. Robb.
           </p>
-
           <p>
             ‘I love my work, even on a bad day, I love my work. Being a writer is a gift I’m grateful
             for, even when it’s a bad day.’
@@ -57,32 +54,33 @@
           </div>
         </div>
       </section>
+      <br>
+      <div class="card_title">
+        <h2>TOP 3</h2>
+      </div>
       <section class="cards-section">
-        <h2 class="card-title">TOP 3</h2>
-
-        <div class="cards-container">
+        <div class="card-deck">
           <div class="card">
-            <div class="card__content">
+            <div class="card-img-top">
               <img src="./assets/img/trilogy.png" alt="Trilogy">
             </div>
-            <div class="card-text">
-              <h3 class="card__title">Boonsboro Trilogy</h3>
-              <p class="card__description">
+            <div class="card-body">
+              <h3 class="card-title">Boonsboro Trilogy</h3>
+              <p class="card-text">
                 #1 New York Times bestselling author Nora Roberts introduces you to the Montgomery
                 brothers—Beckett, Ryder, and Owen—as they bring an intimate bed-and-breakfast to life in their hometown
-                of
-                BoonsBoro, Maryland.
+                of BoonsBoro, Maryland.
               </p>
             </div>
           </div>
 
           <div class="card">
-            <div class="card__content">
+            <div class="card-img-top">
               <img src="./assets/img/MacKade.png" alt="MacKade">
             </div>
-            <div class="card-text">
-              <h3 class="card__title">The MacKade Brothers</h3>
-              <p class="card__description">
+            <div class="card-body">
+              <h3 class="card-title">The MacKade Brothers</h3>
+              <p class="card-text">
                 Playing the Odds begins the family saga of The MacGregors, the beloved and passionate series from #1 New
                 York
                 Times bestselling author Nora Roberts, introducing an adventurous spirit who takes a risk on embracing
@@ -93,20 +91,20 @@
           </div>
 
           <div class="card">
-            <div class="card__content">
+            <div class="card-img-top">
               <img src="./assets/img/sisters.png" alt="Trilogy Sisters">
             </div>
-            <div class="card-text">
-              <h3 class="card__title">Three Sisters Island</h3>
-              <p class="card__description">
+            <div class="card-body">
+              <h3 class="card-title">Three Sisters Island</h3>
+              <p class="card-text">
                 #1 New York Times bestselling author Nora Roberts masterfully evokes the quaint charm of New England in
                 this collection that includes all three novels in the Three Sisters Island Trilogy—stories of
                 friendships made and hearts lost, of legends, lovers, and longing…
               </p>
             </div>
           </div>
-          <br>
         </div>
+        <br>
         <div class="button_books">
           <a href="./pages/allbooks.html">BOOKS</a>
         </div>
@@ -165,30 +163,49 @@
       </section>
     </section>
     <br>
-    <footer>
-      <div class="links">
-        <ul>
-          <li> <a href="./pages/about.html">About</a></li>
-          <li> <a href="./pages/contact.html">Contact Us</a></li>
-        </ul>
-      </div>
+    <footer class="text-center text-lg-start border border-white mt-xl-5 pt-4">
+      <div class="container my-">
+        <div class="container p-4">
+          <div class="row">
+            <div class="links">
+              <ul class="list-unstyled mb-2">
+                <li> <a href="./pages/about.html" class="text-gray">About</a></li>
+                <li> <a href="./pages/contact.html" class="text-gray">Contact Us</a></li>
+              </ul>
+            </div>
 
-      <div class="right3">
-        <p>Subscribe to our newsletter</p>
-      </div>
+            <!--Grid column-->
+            <div class="row d-flex justify-content-center">
+              <!--Grid column-->
+              <div class="col-auto">
+                <p class="pt-2">Sign up for our newsletter</p>
+              </div>
+              <!--Grid column-->
 
-      <div class="form">
-        <input type="email" id="email" placeholder="name@example.com">
-      </div>
-      <div class="form2">
-        <input type="submit" value=">">
-      </div>
+              <!--Grid column-->
+              <div class="col-md-5 col-12">
+                <!-- Email input -->
+                <div class="form-outline form-white mb-4">
+                  <input type="email" id="form5Example2" class="form-control" />
+                </div>
+              </div>
 
-      <div class="copyright">
-        <p> Company Name © 2022</p>
+              <div class="col-auto">
+                <!-- Submit button -->
+                <button type="submit" class="btn btn-outline-light mb-4">
+                  Subscribe
+                </button>
+              </div>
+
+              <div class="copyright">
+                <p> Company Name © 2022</p>
+              </div>
+            </div>
+
+          </div>
+        </div>
       </div>
     </footer>
-  </div>
   <script src="./scripts/bootstrap.bundle.min.js"></script>
 </body>
 

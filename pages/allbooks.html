@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>All Books</title>
-    <link rel="stylesheet" href="./styles/bootstrap.min.css">
+    <link rel="stylesheet" href="../styles/bootstrap.min.css">
     <link rel="stylesheet" href="../styles/style.css">
 
 </head>
@@ -80,30 +80,50 @@
     <br>
     <br>
     <br>
-    <footer>
-        <div class="links">
-            <ul>
-                <li> <a href="../pages/about.html">About</a></li>
-                <li> <a href="../pages/contact.html">Contact Us</a></li>
-            </ul>
+    <footer class="text-center text-lg-start border border-white mt-xl-5 pt-4">
+        <div class="container my-">
+          <div class="container p-4">
+            <div class="row">
+              <div class="links">
+                <ul class="list-unstyled mb-2">
+                  <li> <a href="./pages/about.html" class="text-gray">About</a></li>
+                  <li> <a href="./pages/contact.html" class="text-gray">Contact Us</a></li>
+                </ul>
+              </div>
+  
+              <!--Grid column-->
+              <div class="row d-flex justify-content-center">
+                <!--Grid column-->
+                <div class="col-auto">
+                  <p class="pt-2">Sign up for our newsletter</p>
+                </div>
+                <!--Grid column-->
+  
+                <!--Grid column-->
+                <div class="col-md-5 col-12">
+                  <!-- Email input -->
+                  <div class="form-outline form-white mb-4">
+                    <input type="email" id="form5Example2" class="form-control" />
+                  </div>
+                </div>
+  
+                <div class="col-auto">
+                  <!-- Submit button -->
+                  <button type="submit" class="btn btn-outline-light mb-4">
+                    Subscribe
+                  </button>
+                </div>
+  
+                <div class="copyright">
+                  <p> Company Name © 2022</p>
+                </div>
+              </div>
+  
+            </div>
+          </div>
         </div>
-
-        <div class="right3">
-            <p>Subscribe to our newsletter</p>
-        </div>
-
-        <div class="form">
-            <input type="email" id="email" placeholder="name@example.com">
-        </div>
-        <div class="form2">
-            <input type="submit" value=">">
-        </div>
-
-        <div class="copyright">
-            <p> Company Name © 2022</p>
-        </div>
-    </footer>
-    <script src="./scripts/bootstrap.bundle.min.js"></script>
+      </footer>
+      <script src="../scripts/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>
