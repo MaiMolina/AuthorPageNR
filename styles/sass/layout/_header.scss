@@ -1,0 +1,19 @@
+.header {
+    background-color: #314CB6;
+    padding: 40px;
+    margin: 0;
+    max-width: 100%;
+    text-align: center;
+  
+    h1 {
+      font-size: 60px;
+      font-family: $fontAri;
+      color: #000000;
+      font-weight: bolder;
+    }
+  
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+  }

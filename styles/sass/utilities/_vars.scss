@@ -1,0 +1,28 @@
+$headlinecolor: #eed1fb;
+$hm:#000;
+$ab:#000;
+$al:#000;
+$in:#000;
+$cus:#000;
+$bghome: #ffbfbf;
+$bgabout: #f1ffbf;
+$bgall: #bfffec;
+$bginn: #d2bfff;
+$bgcontus: #ffbffd;
+
+@mixin nav($hover) {
+    &:hover {
+      background-color: $hover;
+    }
+}
+
+%botons{
+  &:hover {
+    background-color: $bghome;
+  }
+}
+
+$button: (
+  About: #514fd3,
+  Books: #3f41c0
+)

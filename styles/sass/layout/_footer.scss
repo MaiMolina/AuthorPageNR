@@ -1,0 +1,40 @@
+footer {
+    background-color: rgb(5, 5, 5);
+
+    .links {
+      text-align: center;
+      padding: 20px;
+
+      ul {
+        display: inline;
+        flex-flow: wrap;
+      }
+
+      li {
+        list-style: none;
+        display: inline;
+      }
+
+      a {
+        display: inline-block;
+        line-height: 1.8;
+        text-decoration: none;
+        color: #959595;
+        margin: 10px;
+      }
+    }
+
+    .col-auto p {
+      color: #959595;
+    }
+
+    .copyright p {
+      font-style: normal;
+      margin: 11px;
+      font-size: 10px;
+      float: center;
+      text-align: center;
+      font-size: 13px;
+      color: #606060;
+    }
+  }

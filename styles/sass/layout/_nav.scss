@@ -1,0 +1,75 @@
+@import "./../utilities/vars";
+
+nav {
+    margin: 0 auto 0;
+    position: relative;
+    width: 100%;
+    height: 50px;
+    background-color: #807e7e;
+    border-radius: 8px;
+    font-size: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    a {
+        line-height: 50px;
+        font-size: 15px;
+        display: inline-block;
+        position: relative;
+        z-index: 1;
+        text-decoration: none;
+        text-transform: uppercase;
+        text-align: center;
+    }
+
+    .home {
+        width: 110px;
+        color: #FFFFFF;
+        @include nav ($bghome);
+
+        &:hover {
+            color: ($hm);
+        }
+    }
+
+    .about {
+        color: #FFFFFF;
+        width: 110px;
+        @include nav ($bgabout);
+
+        &:hover {
+            color: ($ab);
+        }
+    }
+
+    .all {
+        color: #FFFFFF;
+        width: 110px;
+        @include nav ($bgall);
+
+        &:hover {
+            color: ($al);
+        }
+    }
+
+    .inn {
+        color: #FFFFFF;
+        width: 160px;
+        @include nav ($bginn);
+
+        &:hover {
+            color: ($in);
+        }
+    }
+
+    .contus {
+        color: #FFFFFF;
+        width: 110px;
+        @include nav ($bgcontus);
+
+        &:hover {
+            color: ($cus);
+        }
+    }
+}

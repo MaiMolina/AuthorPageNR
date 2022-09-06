@@ -1,0 +1,686 @@
+.about-section .title:hover {
+  background-color: #ffbfbf; }
+
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: Arial, Helvetica, sans-serif;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -ms-box-sizing: border-box; }
+  *:before, *:after {
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -ms-box-sizing: border-box; }
+  * ::selection {
+    background-color: black;
+    color: #bbd5ff; }
+
+.header {
+  background-color: #314CB6;
+  padding: 40px;
+  margin: 0;
+  max-width: 100%;
+  text-align: center; }
+  .header h1 {
+    font-size: 60px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #000000;
+    font-weight: bolder; }
+  .header a {
+    text-decoration: none;
+    color: inherit; }
+
+.about-section .title:hover {
+  background-color: #ffbfbf; }
+
+nav {
+  margin: 0 auto 0;
+  position: relative;
+  width: 100%;
+  height: 50px;
+  background-color: #807e7e;
+  border-radius: 8px;
+  font-size: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  nav a {
+    line-height: 50px;
+    font-size: 15px;
+    display: inline-block;
+    position: relative;
+    z-index: 1;
+    text-decoration: none;
+    text-transform: uppercase;
+    text-align: center; }
+  nav .home {
+    width: 110px;
+    color: #FFFFFF; }
+    nav .home:hover {
+      background-color: #ffbfbf; }
+    nav .home:hover {
+      color: #000; }
+  nav .about {
+    color: #FFFFFF;
+    width: 110px; }
+    nav .about:hover {
+      background-color: #f1ffbf; }
+    nav .about:hover {
+      color: #000; }
+  nav .all {
+    color: #FFFFFF;
+    width: 110px; }
+    nav .all:hover {
+      background-color: #bfffec; }
+    nav .all:hover {
+      color: #000; }
+  nav .inn {
+    color: #FFFFFF;
+    width: 160px; }
+    nav .inn:hover {
+      background-color: #d2bfff; }
+    nav .inn:hover {
+      color: #000; }
+  nav .contus {
+    color: #FFFFFF;
+    width: 110px; }
+    nav .contus:hover {
+      background-color: #ffbffd; }
+    nav .contus:hover {
+      color: #000; }
+
+.about-section .title {
+  display: inline;
+  z-index: 5;
+  background-color: #514fd3;
+  font-family: Arial, Helvetica, sans-serif;
+  height: auto;
+  width: auto;
+  text-decoration: none;
+  white-space: nowrap;
+  min-height: 0px;
+  min-width: 0px;
+  max-height: none;
+  max-width: none;
+  text-align: center;
+  line-height: 15px;
+  letter-spacing: 1px;
+  font-weight: 600;
+  font-size: 15px;
+  border-color: white;
+  border-style: solid;
+  border-width: 2px;
+  padding: 12px 35px;
+  border-radius: 30px;
+  transform-origin: 81.6406px 19.5px;
+  opacity: 1;
+  transform: translate(0px, 0px);
+  visibility: visible; }
+  .about-section .title a {
+    text-decoration: none;
+    color: white; }
+
+.cards-section .button_books {
+  display: inline;
+  z-index: 5;
+  background-color: #3f41c0;
+  font-family: Arial, Helvetica, sans-serif;
+  height: auto;
+  width: auto;
+  text-decoration: none;
+  white-space: nowrap;
+  min-height: 0px;
+  min-width: 0px;
+  max-height: none;
+  max-width: none;
+  text-align: center;
+  line-height: 15px;
+  letter-spacing: 1px;
+  font-weight: 600;
+  font-size: 15px;
+  border-color: white;
+  border-style: solid;
+  border-width: 2px;
+  padding: 12px 35px;
+  border-radius: 30px;
+  transform-origin: 81.6406px 19.5px;
+  opacity: 1;
+  transform: translate(0px, 0px);
+  visibility: visible; }
+  .cards-section .button_books a {
+    text-decoration: none;
+    color: white; }
+
+.headlineInn .button_gallery {
+  color: inherit;
+  text-align: center; }
+  .headlineInn .button_gallery a {
+    text-decoration: none;
+    color: inherit;
+    text-align: center;
+    text-decoration: underline; }
+
+.Form-1 .list {
+  text-align: left;
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+  margin: 20px; }
+
+.Form-1 input[type=text],
+.Form-1 select,
+.Form-1 textarea,
+.Form-1 .list input[type=email],
+.Form-1 select,
+.Form-1 textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical; }
+
+.Form-1 .bottom [type=submit] {
+  background-color: #04AA6D;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  float: left; }
+  .Form-1 .bottom [type=submit]:hover {
+    background-color: #5745a0; }
+
+.Form-1 .bottom [type=reset] {
+  background-color: #f72d5c;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer; }
+  .Form-1 .bottom [type=reset]:hover {
+    background-color: #ec08e8; }
+
+footer {
+  background-color: #050505; }
+  footer .links {
+    text-align: center;
+    padding: 20px; }
+    footer .links ul {
+      display: inline;
+      flex-flow: wrap; }
+    footer .links li {
+      list-style: none;
+      display: inline; }
+    footer .links a {
+      display: inline-block;
+      line-height: 1.8;
+      text-decoration: none;
+      color: #959595;
+      margin: 10px; }
+  footer .col-auto p {
+    color: #959595; }
+  footer .copyright p {
+    font-style: normal;
+    margin: 11px;
+    font-size: 10px;
+    float: center;
+    text-align: center;
+    font-size: 13px;
+    color: #606060; }
+
+body {
+  width: 100%; }
+
+/* Index Page */
+.section {
+  display: grid;
+  height: 970px;
+  grid-template-columns: repeat(6, 6fr);
+  grid-template-rows: 60px 30px 810px 70px;
+  text-align: center; }
+
+.about-section {
+  margin: auto;
+  padding: auto;
+  display: flex;
+  width: 100%;
+  height: 260px; }
+  .about-section .contenedor-img {
+    width: 20%;
+    height: 100%; }
+    .about-section .contenedor-img img {
+      width: 100%;
+      height: 100%;
+      margin: 10px; }
+  .about-section .author-text {
+    width: 70%;
+    display: block; }
+
+/* Card Section */
+.card_title h2 {
+  text-align: center;
+  font-style: normal;
+  font-size: 25px;
+  line-height: 1.3em;
+  background-color: #eed1fb; }
+
+.cards-section {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  padding: 20px;
+  margin: 10px;
+  width: auto;
+  height: auto;
+  align-items: center;
+  border-spacing: 10px; }
+
+.card-deck {
+  border-spacing: 10px;
+  display: flex;
+  flex-direction: row;
+  background-color: #ffffff;
+  font-weight: bolder; }
+
+.cards-section .card-deck .card .card-body {
+  border: 1px solid #fff0f0;
+  text-align: center;
+  display: inline;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  font-style: normal; }
+
+.cards-section .card-deck .card .card-text {
+  background-color: #fae2ff; }
+
+.cards-section .card-deck .card .card-img-top img {
+  opacity: 1;
+  display: block;
+  height: auto;
+  transition: .5s ease;
+  width: 200px;
+  margin: auto; }
+  .cards-section .card-deck .card .card-img-top img:hover {
+    transform: scale(1.1);
+    /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */ }
+
+/* Gallery Section */
+.headlineInn {
+  width: 100%;
+  height: 100%;
+  display: inline;
+  flex-direction: column; }
+  .headlineInn h2 {
+    background-color: #eed1fb;
+    font-size: 25px;
+    text-align: center;
+    padding: 10px; }
+
+.gallery-p {
+  text-align: left;
+  margin: 15px; }
+
+.gallery {
+  padding: 0;
+  display: inline-block;
+  width: 100%;
+  height: 100px; }
+  .gallery .carousel-item img {
+    margin: 15px;
+    margin-right: 15px;
+    width: 98%;
+    border-top-left-radius: calc(0.25rem - 1px);
+    border-top-right-radius: calc(0.25rem - 1px);
+    height: 90vh;
+    min-height: 300px;
+    background: no-repeat center center scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover; }
+
+/* Gallery Section */
+/* News Section */
+.News {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column; }
+  .News h2 {
+    background-color: #eed1fb;
+    font-size: 25px;
+    text-align: center;
+    padding: 10px; }
+  .News .video_content {
+    width: 35%;
+    height: 100%; }
+  .News .video_content iframe {
+    width: 100%;
+    align-items: left;
+    display: flex;
+    float: left;
+    margin: 10px; }
+  .News .News_description {
+    width: 55%;
+    padding: 15px;
+    display: flex;
+    margin: 20px 70px 25px 0;
+    flex-direction: column;
+    align-items: center; }
+
+/* News Section */
+/* Index Page */
+/* About Page */
+.mainH1 h2 {
+  font-weight: bolder;
+  justify-content: center;
+  text-align: center;
+  align-content: center;
+  font-size: 25px;
+  padding: 10px; }
+
+.contenedor-bio {
+  padding: 20px;
+  flex-direction: column;
+  font-style: normal; }
+  .contenedor-bio .image-bio {
+    width: 30%;
+    padding: auto; }
+    .contenedor-bio .image-bio img {
+      width: 100%;
+      float: left;
+      margin: auto;
+      padding: 30px;
+      transition: transform .2s; }
+      .contenedor-bio .image-bio img:hover {
+        transform: scale(1.1);
+        /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */ }
+  .contenedor-bio .bio {
+    margin: 15px;
+    padding: 10px;
+    text-align: left;
+    align-items: center;
+    background-color: #eed1fb; }
+
+/* About Page */
+/* All Books Page */
+.wrap h1 {
+  text-align: center;
+  width: 100%;
+  align-items: center;
+  display: inline-block;
+  background-color: #ffe4fe;
+  font-size: 25px;
+  padding: 5px; }
+
+.book_page {
+  background-color: white;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  margin: auto;
+  padding: auto;
+  display: flex;
+  justify-content: center; }
+  .book_page .items {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap; }
+    .book_page .items .item1 {
+      width: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap; }
+      .book_page .items .item1 .left1 {
+        width: 36%; }
+        .book_page .items .item1 .left1 img {
+          width: 65%; }
+      .book_page .items .item1 .right1 {
+        width: 58%; }
+      .book_page .items .item1 .card_title {
+        color: #000000;
+        margin-bottom: 5px; }
+      .book_page .items .item1 .list {
+        margin: 0 0 15px 0;
+        line-height: 150%;
+        background-color: #e6dbff; }
+
+/* All Books Page */
+/* Inn BoonsBoro Page */
+/* container-inn section */
+.headline-inn h2 {
+  margin-block-start: 0;
+  padding: 8px;
+  text-align: center;
+  background-color: #eed1fb;
+  text-transform: uppercase;
+  font-size: 25px; }
+
+.headline-inn h3 {
+  font-size: 18px;
+  text-align: center;
+  font-style: italic; }
+
+.container-card {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: #eed1fb; }
+
+.image_card {
+  width: 25%; }
+
+.image img {
+  padding: 10px;
+  width: 100%;
+  transition: all .5s ease-in-out; }
+  .image img:hover {
+    filter: grayscale(80%); }
+
+.text {
+  font-family: Arial, Helvetica, sans-serif;
+  width: 100%;
+  margin: 15px;
+  padding: 10px; }
+
+/* container-inn section */
+.section .rooms {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  background-color: #f5f6fb; }
+
+.rooms .cards-rooms {
+  border: 1px solid #fff0f0;
+  text-align: center;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  font-family: Arial, Helvetica, sans-serif;
+  display: inline-block;
+  justify-content: center;
+  align-items: center;
+  margin: 10px; }
+  .rooms .cards-rooms .inn_image img {
+    width: 65%;
+    transition: transform .2s;
+    /* Animation */ }
+
+.inn_image img:hover {
+  transform: scale(1.3);
+  /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */ }
+
+.cards-headline h2 {
+  padding: 8px;
+  text-align: center;
+  margin: 15px;
+  font-size: 25px;
+  text-align: center;
+  background-color: #eed1fb;
+  font-weight: bolder;
+  font-family: Arial, Helvetica, sans-serif; }
+
+.captions {
+  font-size: 17px;
+  text-align: left;
+  padding: 10px 30px;
+  margin: 10px; }
+
+.cards-rooms .cards-rooms .room-1 {
+  align-items: center;
+  float: center;
+  display: inline;
+  border-bottom-color: #adaaaa;
+  border-bottom-width: 2px;
+  margin-bottom: 5px; }
+
+.room-title {
+  font-size: 20px;
+  color: #000000;
+  text-align: center;
+  margin-bottom: 5px; }
+
+.list {
+  font-size: 17px;
+  list-style: none;
+  text-align: center; }
+
+.room-1 p {
+  font-size: 15px;
+  text-align: center;
+  font-style: italic;
+  padding: 1px; }
+
+.rooms h4 {
+  font-size: 15px;
+  text-align: center; }
+
+/* Gallery Section */
+.Inn-gallery-headline h2 {
+  width: 100%;
+  margin: 2rem auto;
+  padding: 8px;
+  text-align: center;
+  font-size: 25px;
+  background-color: #eed1fb; }
+
+.innRow {
+  display: flex;
+  margin: 30px;
+  padding: 30px; }
+
+.innColumn {
+  display: flex;
+  flex-direction: column;
+  flex: 30%; }
+  .innColumn img {
+    width: 95%;
+    margin-bottom: 10px; }
+
+/* Gallery Section */
+/*  Inn BoonsBoro Page */
+/* Contact Page */
+.Contact-us h2 {
+  margin-block-start: 0;
+  padding: 8px;
+  text-align: center;
+  background-color: #eed1fb;
+  text-transform: uppercase;
+  font-size: 25px; }
+
+.Contact-us p {
+  text-align: center;
+  font-size: 16px;
+  font-style: italic; }
+
+/* Contact Page */
+@media (max-width: 1199px) {
+  nav {
+    flex-wrap: wrap;
+    height: auto; }
+  .about-section {
+    height: auto;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center; }
+    .about-section .contenedor-img {
+      width: 70%; }
+  /* Index */
+  .card-deck {
+    flex-direction: column; }
+  .gallery {
+    width: auto;
+    height: 100%; }
+    .gallery .carousel-item img {
+      margin-left: 15px;
+      margin-right: 15px;
+      padding: 15px;
+      height: 90vh; }
+  .News {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+    .News .video_content {
+      width: 95%;
+      margin: 8px; }
+    .News .News_description {
+      width: 95%;
+      margin: 5px; }
+  /* Index */
+  /* About */
+  .contenedor-bio {
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    height: auto; }
+    .contenedor-bio bio {
+      width: 100%; }
+    .contenedor-bio .image-bio img {
+      width: 328%; }
+  /* All books */
+  .book_page .items {
+    flex-direction: column; }
+    .book_page .items .item1 {
+      width: 100%;
+      flex-direction: column; }
+      .book_page .items .item1 .right1,
+      .book_page .items .item1 .left1 {
+        width: 70%; }
+  /* All books */
+  /*  Inn BoonsBoro Page */
+  .headline-inn h3 {
+    font-size: 16px;
+    font-weight: italic; }
+  .container-card {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+    width: auto; }
+    .container-card .text {
+      width: 100%; }
+    .container-card .image {
+      width: 90%; }
+  .captions {
+    font-size: 16px; }
+  .innRow .innColumn {
+    width: 200%; }
+  /*  Inn BoonsBoro Page */
+  /* Contact Page */
+  .Contact-us p {
+    font-size: 16px;
+    font-style: italic;
+    text-align: center; }
+  /* Contact Page */ }

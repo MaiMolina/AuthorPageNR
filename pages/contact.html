@@ -5,9 +5,11 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Contact Us</title>
-  <link rel="stylesheet" href="../styles/bootstrap.min.css">
-  <link rel="stylesheet" href="../styles/style.css">
+  <title>Nora Roberts - Contact Us</title>
+  <meta name="description" content="Send a message to your favorite author">
+  <meta name="keywords" content="email, author, life, message">
+  <link rel="stylesheet" href="../styles/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../styles/css/style.css">
 
 </head>
 
@@ -19,60 +21,57 @@
   </header>
 
   <nav>
-    <a href="../index.html">Home</a>
-    <a href="./about.html">About</a>
-    <a href="./allbooks.html">All Books</a>
-    <a href="./innboonsboro.html">Inn BoonsBoro</a>
-    <a href="./contact.html">Contact Us</a>
-    <div class="animation start-home"></div>
+    <a class="home" href="../index.html">Home</a>
+    <a class="about" href="./about.html">About</a>
+    <a class="all" href="./allbooks.html">All Books</a>
+    <a class="inn" href="./innboonsboro.html">Inn BoonsBoro</a>
+    <a class="contus" href="./contact.html">Contact Us</a>
   </nav>
-  <div class="Form-1">
+  <div class="Contact-us">
     <h2><strong>Contact Us</strong></h2>
     <br>
     <p>Due to the large volume of mail that Nora receives on a daily basis, she is unable to answer email, especially if
       she is to write every day! </p>
-    <form>
-      <div class="list">
-        <div class="mb-3">
-          <label for="name" class="form-label"><strong>Name:</strong></label>
-          <input type="text" id="name" name="user_name">
-        </div>
-        <br>
-        <div class="mb-3">
-          <label for="Last Name" class="form-label"><strong>Last Name:</strong></label>
-          <input type="text" id="Last Name" name="user_Last Name">
-        </div>
-        <br>
-        <div class="mb-3">
-          <label for="exampleInputEmail1" class="form-label"><strong>Email address</strong></label>
-          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-          <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
-        </div>
-        <br>
-        <br>
-        <div class="mb-3">
-          <label for="How can we help you?"><strong>How can we help you?</strong></label>
-          <select id="How can we help you?">
-            <option value="Books">Books</option>
-            <option value="Inn">Inn</option>
-          </select>
-        </div>
-        <br>
-        <br>
-        <li>
-          <label for="msg"><strong>Message:</strong></label>
-          <br>
-          <textarea id="msg" name="user_message"></textarea>
-
-        </li>
-        <br>
-        <!-- Acciones definidas -->
-        <div class="bottom">
-          <input type="reset" value="Clean" />
-          <input type="submit" value="Send" />
-        </div>
-    </form>
   </div>
+  <form class="Form-1">
+    <div class="list">
+      <div class="mb-3">
+        <label for="name" class="form-label"><strong>Name:</strong></label>
+        <input type="text" id="name" name="user_name">
+      </div>
+      <br>
+      <div class="mb-3">
+        <label for="Last Name" class="form-label"><strong>Last Name:</strong></label>
+        <input type="text" id="Last Name" name="user_Last Name">
+      </div>
+      <br>
+      <div class="mb-3">
+        <label for="exampleInputEmail1" class="form-label"><strong>Email address</strong></label>
+        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+        <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+      </div>
+      <br>
+      <br>
+      <div class="mb-3">
+        <label for="How can we help you?"><strong>How can we help you?</strong></label>
+        <select id="How can we help you?">
+          <option value="Books">Books</option>
+          <option value="Inn">Inn</option>
+        </select>
+      </div>
+      <br>
+      <br>
+      <label for="msg"><strong>Message:</strong></label>
+      <br>
+      <textarea id="msg" name="user_message"></textarea>
+      <br>
+      <!-- Acciones definidas -->
+      <div class="bottom">
+        <input type="reset" value="Clean" />
+        <input type="submit" value="Send" />
+      </div>
+    </div>
+  </form>
   <br>
   <br>
   <footer class="text-center text-lg-start border border-white mt-xl-5 pt-4">
@@ -81,8 +80,8 @@
         <div class="row">
           <div class="links">
             <ul class="list-unstyled mb-2">
-              <li> <a href="./pages/about.html" class="text-gray">About</a></li>
-              <li> <a href="./pages/contact.html" class="text-gray">Contact Us</a></li>
+              <li> <a href="../pages/about.html" class="text-gray">About</a></li>
+              <li> <a href="../pages/contact.html" class="text-gray">Contact Us</a></li>
             </ul>
           </div>
 
