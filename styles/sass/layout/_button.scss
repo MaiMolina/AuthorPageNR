@@ -1,47 +1,10 @@
+/* Index Page */
 .about-section {
 
-.title {
-  display: inline;
-  z-index: 5;
-  background-color: map-get($button, About );
-  font-family: $fontAri;
-  height: auto;
-  width: auto;
-  text-decoration: none;
-  white-space: nowrap;
-  min-height: 0px;
-  min-width: 0px;
-  max-height: none;
-  max-width: none;
-  text-align: center;
-  line-height: 15px;
-  letter-spacing: 1px;
-  font-weight: 600;
-  font-size: 15px;
-  border-color: rgb(255, 255, 255);
-  border-style: solid;
-  border-width: 2px;
-  padding: 12px 35px;
-  border-radius: 30px;
-  transform-origin: 81.6406px 19.5px;
-  opacity: 1;
-  transform: translate(0px, 0px);
-  visibility: visible;
-  @extend %botons;
-
-  a {
-    text-decoration: none;
-    color: rgb(255, 255, 255);
-  }
-}
-}
-
-.cards-section {
-
-.button_books {
+  .title {
     display: inline;
     z-index: 5;
-    background-color: map-get($button, Books );
+    background-color: map-get($button, About);
     font-family: $fontAri;
     height: auto;
     width: auto;
@@ -56,7 +19,7 @@
     letter-spacing: 1px;
     font-weight: 600;
     font-size: 15px;
-    border-color: rgb(255, 255, 255);
+    border-color: ($bgg);
     border-style: solid;
     border-width: 2px;
     padding: 12px 35px;
@@ -65,20 +28,55 @@
     opacity: 1;
     transform: translate(0px, 0px);
     visibility: visible;
+    @extend %botons;
 
     a {
-        text-decoration: none;
-        color: rgb(255, 255, 255);
-      }
+      text-decoration: none;
+      color: ($bgg);
+    }
+  }
 }
-}
+
+.button_books {
+  height: 20px;
+  width: 100%;
+  margin: -20px -40px;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  display: inline;
+  align-items: center;
+  align-self: center;
+  align-content: center;
+  background-color: map-get($button, Books);
+  font-family: $fontAri;
+  white-space: nowrap;
+  text-align: center;
+  line-height: 15px;
+  letter-spacing: 1px;
+  font-weight: 600;
+  font-size: 15px;
+  border-color: ($bgg);
+  border-style: solid;
+  border-width: 2px;
+  padding: 12px;
+  border-radius: 30px;
+  transform-origin: 81.6406px 19.5px;
+  opacity: 1;
+  transform: translate(0px, 0px);
+
+    a {
+      text-decoration: none;
+      color: ($bgg);
+    }
+  }
 
 .headlineInn {
 
-.button_gallery {
+  .button_gallery {
     color: inherit;
     text-align: center;
-  
+
     a {
       text-decoration: none;
       color: inherit;
@@ -87,3 +85,43 @@
     }
   }
 }
+
+/* Index Page */
+
+/* Inn BoonsBoro Page */
+.rooms .reserve {
+  height: 20px;
+  width: 100px;
+  margin: -20px -50px;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  display: inline;
+  align-items: center;
+  align-self: center;
+  align-content: center;
+  background-color: map-get($button, Books);
+  font-family: $fontAri;
+  white-space: nowrap;
+  text-align: center;
+  line-height: 15px;
+  letter-spacing: 1px;
+  font-weight: 600;
+  font-size: 15px;
+  border-color: ($bgg);
+  border-style: solid;
+  border-width: 2px;
+  padding: 12px 35px;
+  border-radius: 30px;
+  transform-origin: 81.6406px 19.5px;
+  opacity: 1;
+  transform: translate(0px, 0px);
+
+
+  a {
+    text-decoration: none;
+    color: ($bgg);
+  }
+}
+
+/* Inn BoonsBoro Page */

@@ -58,56 +58,50 @@ body {
 }
 
 .cards-section {
+  width: 100%;
+  height: 100%;
   display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
+  background-color: #f5f6fb;
   padding: 20px;
-  margin: 10px;
-  width: auto;
-  height: auto;
-  align-items: center;
-  border-spacing: 10px;
 }
 
-.card-deck {
-  border-spacing: 10px;
-  display: flex;
-  flex-direction: row;
-  background-color: #ffffff;
-  font-weight: bolder;
+  .cards-section .card {
+    border: 1px solid #fff0f0;
+    text-align: center;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    font-family: $fontAri;
+    display: inline-block;
+    margin: 10px;
+    padding: 20px;
+
+  .card-body p{
+    text-align: center;
+    display: inline;
+    font-style: normal;
+    background-color: #fae2ff;
+  }
+
+.card-title h3 {
+  font-size: 15px;
+    color: ($bgbl);
+    text-align: center;
+    margin-bottom: 5px;
 }
 
-.cards-section {
-  .card-deck .card {
-    .card-body {
-      border: 1px solid #fff0f0;
-      text-align: center;
-      display: inline;
-      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-      font-style: normal;
-    }
+  .card-img-top img {
+    opacity: 1;
+    display: block;
+    height: auto;
+    transition: .5s ease;
+    width: 200px;
+    margin: auto;
 
-    .card-text {
-      background-color: #fae2ff;
-    }
-
-
-    .card-img-top img {
-      opacity: 1;
-      display: block;
-      height: auto;
-      transition: .5s ease;
-      width: 200px;
-      margin: auto;
-
-      &:hover {
-        transform: scale(1.1);
-
-        /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
-      }
+    &:hover {
+      transform: scale(1.1);
+      /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
     }
   }
-}
+  }
 
 /* Gallery Section */
 
@@ -153,184 +147,184 @@ body {
   }
 }
 
-  /* Gallery Section */
-  /* News Section */
+/* Gallery Section */
+/* News Section */
 
-  .News {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
+.News {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
 
-    h2 {
-      background-color: ($headlinecolor);
-      font-size: ($fzheadline);
-      text-align: center;
-      padding: 10px;
-    }
-
-    .video_content {
-      width: 35%;
-      height: 100%;
-    }
-
-    .video_content iframe {
-      width: 100%;
-      align-items: left;
-      display: flex;
-      float: left;
-      margin: 10px;
-    }
-
-    .News_description {
-      width: 55%;
-      padding: 15px;
-      display: flex;
-      margin: 20px 70px 25px 0;
-      flex-direction: column;
-      align-items: center;
-    }
-  }
-
-  /* News Section */
-
-  /* Index Page */
-
-  /* About Page */
-
-  .mainH1 h2 {
-    font-weight: bolder;
-    justify-content: center;
-    text-align: center;
-    align-content: center;
+  h2 {
+    background-color: ($headlinecolor);
     font-size: ($fzheadline);
+    text-align: center;
     padding: 10px;
   }
 
-  .contenedor-bio {
-    padding: 20px;
+  .video_content {
+    width: 35%;
+    height: 100%;
+  }
+
+  .video_content iframe {
+    width: 100%;
+    align-items: left;
+    display: flex;
+    float: left;
+    margin: 10px;
+  }
+
+  .News_description {
+    width: 55%;
+    padding: 15px;
+    display: flex;
+    margin: 20px 70px 25px 0;
     flex-direction: column;
-    font-style: normal;
-
-    .image-bio {
-      width: 30%;
-      padding: auto;
-
-      img {
-        width: 100%;
-        float: left;
-        margin: auto;
-        padding: 30px;
-        transition: transform .2s;
-
-        &:hover {
-          transform: scale(1.1);
-
-          /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
-        }
-      }
-    }
-
-    .bio {
-      margin: 15px;
-      padding: 10px;
-      text-align: left;
-      align-items: center;
-      background-color: ($headlinecolor);
-    }
-  }
-
-  /* About Page */
-
-  /* All Books Page */
-
-  .wrap h1{
-    text-align: center;
-    width: 100%;
     align-items: center;
-    display: inline-block;
-    background-color: #ffe4fe;
-    font-size: ($fzheadline);
-    padding: 5px;
   }
+}
 
-  .book_page {
-    background-color: white;
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    margin: auto;
+/* News Section */
+
+/* Index Page */
+
+/* About Page */
+
+.mainH1 h2 {
+  font-weight: bolder;
+  justify-content: center;
+  text-align: center;
+  align-content: center;
+  font-size: ($fzheadline);
+  padding: 10px;
+}
+
+.contenedor-bio {
+  padding: 20px;
+  flex-direction: column;
+  font-style: normal;
+
+  .image-bio {
+    width: 30%;
     padding: auto;
-    display: flex;
-    justify-content: center;
 
-    .items {
+    img {
       width: 100%;
-      display: flex;
-      flex-wrap: wrap;
+      float: left;
+      margin: auto;
+      padding: 30px;
+      transition: transform .2s;
 
-      .item1 {
-        width: 50%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-wrap: wrap;
+      &:hover {
+        transform: scale(1.1);
 
-        .left1 {
-          width: 36%;
-
-          img {
-            width: 65%;
-          }
-        }
-
-        .right1 {
-          width: 58%;
-        }
-
-        .card_title {
-          color: #000000;
-          margin-bottom: 5px;
-        }
-
-        .list {
-          margin: 0 0 15px 0;
-          line-height: 150%;
-          background-color: #e6dbff;
-        }
+        /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
       }
     }
   }
 
-  /* All Books Page */
-
-  /* Inn BoonsBoro Page */
-  /* container-inn section */
-
-  .headline-inn {
-    h2 {
-      margin-block-start: 0;
-      padding: 8px;
-      text-align: center;
-      background-color: ($headlinecolor);
-      text-transform: uppercase;
-      font-size: ($fzheadline);
-    }
-
-    h3 {
-      font-size: 18px;
-      text-align: center;
-      font-style: italic;
-    }
-  }
-
-  .container-card {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
+  .bio {
+    margin: 15px;
+    padding: 10px;
+    text-align: left;
     align-items: center;
     background-color: ($headlinecolor);
   }
+}
+
+/* About Page */
+
+/* All Books Page */
+
+.wrap h2 {
+  text-align: center;
+  width: 100%;
+  align-items: center;
+  display: inline-block;
+  background-color: #ffe4fe;
+  font-size: ($fzheadline);
+  padding: 5px;
+}
+
+.book_page {
+  background-color: ($bgg);
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  margin: auto;
+  padding: auto;
+  justify-content: center;
+
+  .items {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .item1 {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+
+    .left1 {
+      width: 25%;
+      margin: 15px;
+    }
+
+    img {
+      width: 60%;
+    }
+
+    .right1 {
+      width: 48%;
+    }
+
+    .card_title {
+      color: ($bgbl);
+      margin-bottom: 5px;
+    }
+
+    .list {
+      margin: 0 0 15px 0;
+      line-height: 150%;
+      background-color: #e6dbff;
+    }
+  }
+}
+
+/* All Books Page */
+
+/* Inn BoonsBoro Page */
+/* container-inn section */
+
+.headline-inn {
+  h2 {
+    margin-block-start: 0;
+    padding: 8px;
+    text-align: center;
+    background-color: ($headlinecolor);
+    text-transform: uppercase;
+    font-size: ($fzheadline);
+  }
+
+  h3 {
+    font-size: 18px;
+    text-align: center;
+    font-style: italic;
+  }
+}
+
+.container-card {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: ($headlinecolor);
+
 
   .image_card {
     width: 25%;
@@ -352,33 +346,50 @@ body {
     margin: 15px;
     padding: 10px;
   }
+}
 
-  /* container-inn section */
+/* container-inn section */
 
-  .section .rooms {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    background-color: #f5f6fb;
-  }
+.cards-headline h2 {
+  padding: 8px;
+  text-align: center;
+  margin: 15px;
+  font-size: ($fzheadline);
+  text-align: center;
+  background-color: ($headlinecolor);
+  font-weight: bolder;
+  font-family: $fontAri;
+}
 
-  .rooms .cards-rooms {
-    border: 1px solid #fff0f0;
-    text-align: center;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    font-family: $fontAri;
-    display: inline-block;
-    justify-content: center;
-    align-items: center;
-    margin: 10px;
+.captions {
+  font-size: 17px;
+  text-align: left;
+  padding: 10px 30px;
+  margin: 10px;
+}
 
-    .inn_image img {
-      width: 65%;
-      transition: transform .2s;
+.rooms {
+  width: 100%;
+  height: 100%;
+  display: inline-block;
+  background-color: #f5f6fb;
+  padding: 40px;
+}
 
-      /* Animation */
-    }
+.rooms .cards-rooms {
+  border: 1px solid #fff0f0;
+  text-align: center;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  font-family: $fontAri;
+  display: inline-block;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+  padding: 20px;
+
+  .inn_image img {
+    width: 65%;
+    transition: transform .2s;
   }
 
   .inn_image img:hover {
@@ -387,241 +398,270 @@ body {
     /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
   }
 
-  .cards-headline h2 {
-    padding: 8px;
-    text-align: center;
-    margin: 15px;
-    font-size: ($fzheadline);
-    text-align: center;
-    background-color: ($headlinecolor);
-    font-weight: bolder;
-    font-family: $fontAri;
-  }
-
-  .captions {
-    font-size: 17px;
-    text-align: left;
-    padding: 10px 30px;
-    margin: 10px;
-  }
-
-  .cards-rooms .cards-rooms .room-1 {
-    align-items: center;
-    float: center;
-    display: inline;
-    border-bottom-color: #adaaaa;
-    border-bottom-width: 2px;
-    margin-bottom: 5px;
-  }
-
-
-  .room-title {
-    font-size: 20px;
-    color: #000000;
+  .room-title h3 {
+    font-size: 15px;
+    color: ($bgbl);
     text-align: center;
     margin-bottom: 5px;
   }
 
   .list {
-    font-size: 17px;
+    font-size: 15px;
     list-style: none;
-    text-align: center;
+    text-align: left;
+    background-color: #ebebeb;
   }
 
   .room-1 p {
-    font-size: 15px;
+    font-size: 16px;
     text-align: center;
     font-style: italic;
     padding: 1px;
   }
 
-  .rooms h4 {
-    font-size: 15px;
+  h4 {
+    font-size: 18px;
     text-align: center;
   }
+}
 
-  /* Gallery Section */
+/* Gallery Section */
 
-  .Inn-gallery-headline h2 {
-    width: 100%;
-    margin: 2rem auto;
-    padding: 8px;
-    text-align: center;
-    font-size: ($fzheadline);
-    background-color: ($headlinecolor);
+.Inn-gallery-headline h2 {
+  width: 100%;
+  margin: 2rem auto;
+  padding: 8px;
+  text-align: center;
+  font-size: ($fzheadline);
+  background-color: ($headlinecolor);
+}
+
+.innRow {
+  display: flex;
+  margin: 30px;
+  padding: 30px;
+}
+
+.innColumn {
+  display: flex;
+  flex-direction: column;
+  flex: 30%;
+
+  img {
+    width: 95%;
+    margin-bottom: 10px;
+  }
+}
+
+
+/* Gallery Section */
+
+/*  Inn BoonsBoro Page */
+
+/* 404 Page */
+
+.container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  align-items: center;
+  justify-content: center;
+
+  img {
+    width: 50%;
   }
 
-  .innRow {
-    display: flex;
-    margin: 30px;
-    padding: 30px;
+  h2 {
+    color: ($bgbl);
+    font-size: 20px;
+    padding: 20px;
   }
 
-  .innColumn {
-    display: flex;
+  .boton {
+    padding: 15px 30px;
+    border-radius: 15px;
+    border: none;
+    background: rgb(5, 129, 245);
+    color: ($bgg);
+  }
+
+  a {
+    text-decoration: none;
+    color: ($bgg);
+  }
+}
+
+/* 404 Page */
+
+/* Contact Page */
+
+.Contact-us h2 {
+  margin-block-start: 0;
+  padding: 8px;
+  text-align: center;
+  background-color: $headlinecolor;
+  text-transform: uppercase;
+  font-size: ($fzheadline)
+}
+
+.Contact-us p {
+  text-align: center;
+  font-size: 16px;
+  font-style: italic;
+}
+
+/* Contact Page */
+
+@media (max-width: 1199px) {
+  nav {
+    flex-wrap: wrap;
+    height: auto;
+  }
+
+  .about-section {
+    height: auto;
     flex-direction: column;
-    flex: 30%;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
 
-    img {
-      width: 95%;
-      margin-bottom: 10px;
+    .contenedor-img {
+      width: 60%;
     }
   }
 
-  /* Gallery Section */
+  /* Index */
 
-  /*  Inn BoonsBoro Page */
-
-  /* Contact Page */
-   
-  .Contact-us h2 {
-    margin-block-start: 0;
-    padding: 8px;
-    text-align: center;
-    background-color: $headlinecolor;
-    text-transform: uppercase;
-    font-size: ($fzheadline)
+  .cards-section{
+    flex-direction: column;
   }
 
-  .Contact-us p {
-    text-align: center;
-    font-size: 16px;
-    font-style: italic;
-  }
+  .gallery {
+    width: 100%;
+    height: 100%;
 
-  /* Contact Page */
-
-  @media (max-width: 1199px) {
-    nav {
-      flex-wrap: wrap;
-      height: auto;
-    }
-
-    .about-section {
-      height: auto;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      align-content: center;
-
-      .contenedor-img {
-        width: 70%;
-      }
-    }
-
-    /* Index */
-
-    .card-deck {
-      flex-direction: column;
-    }
-
-    .gallery {
-      width: auto;
-      height: 100%;
-    
-    .carousel-item img{
-      margin-left: 15px;
-      margin-right: 15px;
+    .carousel-item img {
       padding: 15px;
+      margin: 6px;
       height: 90vh;
     }
   }
 
-    .News {
-      display: flex;
+  .News {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .video_content {
+      width: 95%;
+      margin: -1px;
+    }
+
+    .News_description {
+      width: 95%;
+      margin: 5px;
+    }
+  }
+
+  /* Index */
+
+  /* About */
+
+  .contenedor-bio {
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    height: auto;
+
+    .bio {
+      width: 100%;
+      margin: -5px;
+    }
+
+    .image-bio img {
+      width: 328%;
+    }
+  }
+
+  /* All books */
+
+  .wrap {
+    text-align: center;
+  }
+
+  .book_page .items {
+    flex-direction: column;
+
+    .item1 {
+      width: 100%;
       flex-direction: column;
-      justify-content: center;
-      align-items: center;
 
-      .video_content {
-        width: 95%;
-        margin: 8px;
-      }
-
-      .News_description {
-        width: 95%;
+      .right1,
+      .left1 {
         margin: 5px;
       }
-    }
 
-    /* Index */
-
-    /* About */
-
-    .contenedor-bio {
-      display: flex;
-      flex-direction: column;
-      width: auto;
-      height: auto;
-
-      bio {
-        width: 100%;
+      img {
+        width: 50%;
       }
 
-      .image-bio img {
-        width: 328%;
+      .card_title {
+        text-align: center;
       }
     }
-
-    /* All books */
-
-    .book_page .items {
-      flex-direction: column;
-
-      .item1 {
-        width: 100%;
-        flex-direction: column;
-
-        .right1,
-        .left1 {
-          width: 70%;
-        }
-      }
-    }
-
-    /* All books */
-
-    /*  Inn BoonsBoro Page */
-
-    .headline-inn h3 {
-      font-size: 16px;
-      font-weight: italic;
-    }
-
-    .container-card {
-      display: flex;
-      flex-direction: column;
-      height: auto;
-      justify-content: center;
-      align-items: center;
-      width: auto;
-
-      .text {
-        width: 100%;
-      }
-
-      .image {
-        width: 90%;
-      }
-    }
-
-    .captions {
-      font-size: 16px;
-    }
-
-    .innRow .innColumn {
-      width: 200%;
-    }
-
-    /*  Inn BoonsBoro Page */
-
-    /* Contact Page */
-
-    .Contact-us p {
-      font-size: 16px;
-      font-style: italic;
-      text-align: center;
-    }
-
-    /* Contact Page */
   }
+
+  /* All books */
+
+  /*  Inn BoonsBoro Page */
+
+  .headline-inn h3 {
+    font-size: 16px;
+    font-weight: italic;
+  }
+
+  .container-card {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+
+    .text {
+      width: 100%;
+    }
+
+    .image {
+      width: 90%;
+    }
+  }
+
+  .captions {
+    font-size: 16px;
+  }
+
+  .reserve {
+    height: auto;
+    align-items: center;
+  }
+
+  .innRow .innColumn {
+    width: 200%;
+  }
+
+  /*  Inn BoonsBoro Page */
+
+  /* Contact Page */
+
+  .Contact-us p {
+    font-size: 16px;
+    font-style: italic;
+    text-align: center;
+  }
+
+  /* Contact Page */
+}
