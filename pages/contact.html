@@ -27,53 +27,28 @@
     <a class="inn" href="./innboonsboro.html">Inn BoonsBoro</a>
     <a class="contus" href="./contact.html">Contact Us</a>
   </nav>
-  <div class="Contact-us">
-    <h2><strong>Contact Us</strong></h2>
-    <br>
-    <p>Due to the large volume of mail that Nora receives on a daily basis, she is unable to answer email, especially if
-      she is to write every day! </p>
-  </div>
-  <form class="Form-1">
-    <div class="list">
-      <div class="mb-3">
-        <label for="name" class="form-label"><strong>Name:</strong></label>
-        <input type="text" id="name" name="user_name">
-      </div>
-      <br>
-      <div class="mb-3">
-        <label for="Last Name" class="form-label"><strong>Last Name:</strong></label>
-        <input type="text" id="Last Name" name="user_Last Name">
-      </div>
-      <br>
-      <div class="mb-3">
-        <label for="exampleInputEmail1" class="form-label"><strong>Email address</strong></label>
-        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-        <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
-      </div>
-      <br>
-      <br>
-      <div class="mb-3">
-        <label for="How can we help you?"><strong>How can we help you?</strong></label>
-        <select id="How can we help you?">
-          <option value="Books">Books</option>
-          <option value="Inn">Inn</option>
-        </select>
-      </div>
-      <br>
-      <br>
-      <label for="msg"><strong>Message:</strong></label>
-      <br>
-      <textarea id="msg" name="user_message"></textarea>
-      <br>
-      <!-- Acciones definidas -->
-      <div class="bottom">
-        <input type="reset" value="Clean" />
-        <input type="submit" value="Send" />
-      </div>
+  <div class="contact-container">
+    <div class="left-col"></div>
+    <div class="right-col">
+      <h2>Contact us</h2>
+      <p>Due to the large volume of mail that Nora receives on a daily basis, she is unable to answer email, especially
+        if
+        she is to write every day!</p>
+
+      <form id="contact-form" method="post">
+        <label for="name">Full name</label>
+        <input type="text" id="name" name="name" placeholder="Your Full Name" required>
+        <label for="email">Email Address</label>
+        <input type="email" id="email" name="email" placeholder="Your Email Address" required>
+        <label for="message">Message</label>
+        <textarea rows="6" placeholder="Your Message" id="message" name="message" required></textarea>
+        <div class="button">
+          <input type="reset" value="Clean" />
+          <input type="submit" value="Send" />
+        </div>
+      </form>
     </div>
-  </form>
-  <br>
-  <br>
+  </div>
   <footer class="text-center text-lg-start border border-white mt-xl-5 pt-4">
     <div class="container my-">
       <div class="container p-4">
@@ -97,7 +72,7 @@
             <div class="col-md-5 col-12">
               <!-- Email input -->
               <div class="form-outline form-white mb-4">
-                <input type="email" id="form5Example2" class="form-control" />
+                <input type="email" id="form5Example2" class="form-control" placeholder="name@example.com">
               </div>
             </div>
 

@@ -11,6 +11,14 @@ $bginn: #d2bfff;
 $bgcontus: #ffbffd;
 $bgg: #ffffff;
 $bgbl: #000000;
+$bgb: #f6f9e0;
+
+:root {
+  --primary-color: #010712;
+  --secondary-color: #818386;
+  --bg-color: #FCFDFD;
+  --h2-color: #3F444C;
+}
 
 @mixin nav($hover) {
     &:hover {
