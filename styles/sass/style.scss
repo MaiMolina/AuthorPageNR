@@ -685,8 +685,9 @@ body {
     margin: auto;
 
     .text {
-      margin: 10px;
+      margin: 20px;
       width: 100%;
+      align-items: center;
     }
 
     .image {
@@ -696,6 +697,7 @@ body {
 
   .captions {
     font-size: 16px;
+    margin: auto;
   }
 
   .reserve {
@@ -772,6 +774,12 @@ body {
     }
   }
 
+  .headlineInn {
+    .gallery-p p{
+      margin: auto;
+    }
+  }
+
   .contenedor-bio {
     .image-bio {
       width: 100%!important;
@@ -780,5 +788,15 @@ body {
       }
     }
   }
+
+  .container-card {
+
+    .text p{
+      margin: auto;
+    }
+  }
+      .captions p {
+        margin: auto;
+     }
 
 }

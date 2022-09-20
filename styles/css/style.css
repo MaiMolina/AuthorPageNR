@@ -811,12 +811,14 @@ body {
     width: auto;
     margin: auto; }
     .container-card .text {
-      margin: 10px;
-      width: 100%; }
+      margin: 20px;
+      width: 100%;
+      align-items: center; }
     .container-card .image {
       width: 90%; }
   .captions {
-    font-size: 16px; }
+    font-size: 16px;
+    margin: auto; }
   .reserve {
     height: auto; }
   .container_Inn {
@@ -860,7 +862,13 @@ body {
 @media (max-width: 600px) {
   .about-section .contenedor-img {
     width: 55% !important; }
+  .headlineInn .gallery-p p {
+    margin: auto; }
   .contenedor-bio .image-bio {
     width: 100% !important; }
     .contenedor-bio .image-bio img {
-      padding: 0px !important; } }
+      padding: 0px !important; }
+  .container-card .text p {
+    margin: auto; }
+  .captions p {
+    margin: auto; } }
