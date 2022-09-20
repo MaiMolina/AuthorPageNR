@@ -139,3 +139,27 @@
     }
   }
 }
+
+@media (max-width: 1199px) {
+  .contact-container{
+    .right-col {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+  #contact-form, .button {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+  }
+}
+
+@media (max-width: 600px) {
+  .contact-container h2, label, input, textarea, p {
+    width: 75%!important;
+  }
+}
